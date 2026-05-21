@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="">
+        <h2>Datos personales basicos</h2>
+
+        <label for="">Nombre del Usuario</label>
+        <input type="text"  id="nombreUsuario" name="nombre" placeholder="Ej: juan perez">
+
+        <br><br>
+
+        <label for="correoUsuauario"> correo electronico <label >
+            <input type="email" id="correoUsuauario"name= "email" placeholder="correo@ejemplo.com" required > 
+           
+            <form action="">
+               <h2>Difernte tipo de inputs</h2>
+                <label for=""></label>
+                <input type="password" name="clave" id=" pass">
+                <br><br>
+                <label for="edad"> Edad</label>
+                <input type="numero" id="edad" name="edad" min ="18" max = "99" >
+                <br><br>
+                <label for="nacimiento">Fecha nacimiento:</label>
+                <input type="dare"id="nacimiento" name="fecha _ nac">
+                <br><br>
+                <p>Seleciona tu plan:</p>
+                <input type="radio"name="plan" id="planGratis">
+                <label for="planGratis">plan Gratis 
+                </label> 
+                <input type="radio"name="plan" id="plapro">
+                <label for="planGratis">plan plapro</label>
+                <input type="radio"name="plan" id="planpremium">
+                <label for="planGratis">plan premium</label>
+                <br><br>
+                <input type="checkbox" id="terminos" name="termino " required>
+                <label for="terminos">Acepto terminos y condiciones </label>
+
+                <button type="submit">Enviar formulario</button>
+                <button type="reset
+                ">Limpiar formulario</button>
+                
+                <form action=""> 
+                    <h2>Textarea y Selects</h2>
+                    <label for="país"> ¿ De que pais nos cisitas?</label>
+                    <select name="pais" id="pais">
+                        <option value="co">Colmbia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">spaña</option>
+                        <option value="MX">Mexico</option>
+                    </select>
+                    <br><br>
+                    <label for="mensaje">Dejanos ti opinión:</label>
+                    <br>
+                    <textarea name="mensaje " id="mensaje"rows ="4" cols="50"placeholder= "Escribe aqui..."></textarea>
+                    
+
+                </form>
+
+            </form>
+
+
+
+    </form>
+</body>
+</html>
