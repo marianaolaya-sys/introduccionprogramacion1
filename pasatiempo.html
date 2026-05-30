@@ -1,0 +1,171 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la pestaña -->
+    <title>Mi PASATIEMPO:</title>
+    <style>
+        /* Estilos básicos para que se vea ordenado */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#cc219e;
+            color: #201414;
+        }
+        header, footer {
+            background-color:#4c0c69;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color:aquamarine;
+            padding: 10px;
+        }
+        nav a {
+            color:antiquewhite;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 1000px;
+            background-color:rgb(9, 184, 190);
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 3rem;
+        }
+        table, th, td {
+            border: 1px solid #554286;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #7e1963;
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        input, select, button {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #2e2403dc;
+        }
+        button {
+            background-color:aqua;
+            color: #201414; /* Cambiado para que se lea bien */
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MI PASATIEMPO</h1>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Jugar en Papa Louie</h2>
+        <p>Es el juego que más me gusta jugar</p>
+        <img src="juego de papa luie.jpeg" alt="juego papa luie" title="juego papa luie" width="300px" height="300px">
+       
+        <h2>Películas o series de Dragon Ball</h2>
+        <p>Son las películas y series que más me gustan</p>
+        <img src="images 3.jpeg" alt="Dragon Ball" title="Dragon Ball" width="300px" height="300px">
+
+        <iframe src="https://www.youtube.com/embed/ZaIAihDR_X0" frameborder="0" width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    </section>
+
+    <!-- Sección de Datos Tabulares y Formulario (todo dentro del mismo cuerpo) -->
+    <section id="datos-formulario">
+        <h2>Datos Tabulares</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre </th>
+                    <th>Categoría</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Elemento A</td>
+                    <td>Tipo 1</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Elemento B</td>
+                    <td>Tipo 2</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>Elemento C</td>
+                    <td>Tipo 1</td>
+                    <td>95</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+            <div>
+                <label for="correo">Correo electrónico:</label><br>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+            </div>
+            <div>
+                <label for="asunto">Asunto de consulta:</label><br>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="soporte">Soporte técnico</option>
+                    <option value="informacion">Solicitud de información</option>
+                    <option value="ventas">Ventas y cotizaciones</option>
+                </select>
+            </div>
+            <button type="submit">Enviar formulario</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Gracias por visitar mi página</p>
+    </footer>
+
+</body>
+</html>
