@@ -1,0 +1,50 @@
+
+.perfil {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border: 1px solid teal;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.foto-perfil {
+    width:150px;
+    height: 150px;
+    border-radius: 60%;
+    animation: girar 8s linear infinite;
+}
+
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.datos-perfil {
+    font-family: Arial, sans-serif;
+}
+
+.datos-perfil h2 {
+    margin: 0 0 0.5rem 0;
+    color: #0626b4;
+}
+
+.datos-perfil p {
+    margin: 0.2rem 0;
+    color: #6e2f81;
+}
+
+@media (max-width: 400px) {
+    .perfil {
+        flex-direction: column; 
+        text-align: center;
+    }
+}
